@@ -10,6 +10,7 @@ declare(strict_types=1);
 
 require_once __DIR__ . '/../includes/funciones.php';
 iniciar_sesion();
+requerir_login();
 
 $pdo = db();
 

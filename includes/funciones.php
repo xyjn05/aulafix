@@ -216,3 +216,42 @@ function ahora_sql(): string
 {
     return date('Y-m-d H:i:s');
 }
+
+/**
+ * Mira si hay una sesión iniciada. Si no la hay, manda al login.
+ * Se pone al principio de las páginas que son privadas.
+ *
+ * @return array Los datos del usuario (id, nombre, rol).
+ */
+function requerir_login(): array
+{
+    if (!isset($_SESSION['usuario'])) {
+        redirigir('login.php');
+    }
+    return $_SESSION['usuario'];
+}
+
+/**
+ * Dice si el usuario es profesor.
+ *
+ * @param array $usuario El usuario de la sesión.
+ * @return bool true si es profesor.
+ */
+function es_profesor(array $usuario): bool
+{
+    return $usuario['rol'] === 'profesor';
+}
+
+/**
+ * Responde 403 (no tienes permiso) y para la página.
+ * Los permisos se comprueban en el servidor porque ocultar un botón no basta:
+ * alguien puede mandar el formulario a mano.
+ *
+ * @param string $texto El motivo.
+ * @return void
+ */
+function prohibido(string $texto = 'No tienes permiso para hacer esto.'): void
+{
+    http_response_code(403);
+    exit($texto);
+}
