@@ -1,0 +1,166 @@
+/* estilos.css · Estilos de AulaFix. Los estados se marcan con clases, no con estilos en línea. */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f6f8;
+    color: #222;
+}
+
+main {
+    max-width: 960px;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+}
+
+a {
+    color: #0b6e5c;
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1c2733;
+    color: #fff;
+    padding: .75rem 1rem;
+}
+
+.barra a {
+    color: #fff;
+    margin-right: 1rem;
+}
+
+.marca {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.en-linea {
+    display: inline;
+}
+
+.pie {
+    text-align: center;
+    color: #666;
+    padding: 2rem 1rem;
+}
+
+.mensaje {
+    padding: .7rem 1rem;
+    border-left: 4px solid;
+    background: #fff;
+}
+
+.mensaje-ok {
+    border-color: #0b6e5c;
+}
+
+.mensaje-error {
+    border-color: #b3261e;
+}
+
+.formulario {
+    background: #fff;
+    padding: 1.25rem;
+    max-width: 520px;
+    border: 1px solid #ccd;
+}
+
+.campo {
+    margin-bottom: 1rem;
+}
+
+.campo label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: .25rem;
+}
+
+.campo input[type=text],
+.campo input[type=email],
+.campo input[type=password],
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: .5rem;
+    box-sizing: border-box;
+}
+
+.error-campo {
+    color: #b3261e;
+    margin: .25rem 0 0;
+    font-size: .9rem;
+}
+
+button,
+.boton {
+    background: #0b6e5c;
+    color: #fff;
+    border: 0;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.resumen {
+    display: flex;
+    gap: .75rem;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+
+.tarjeta {
+    background: #fff;
+    border: 1px solid #ccd;
+    padding: .75rem 1rem;
+    min-width: 140px;
+}
+
+.tarjeta-valor {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.pestanas {
+    border-bottom: 2px solid #ccd;
+}
+
+.pestana {
+    background: none;
+    color: #222;
+    border-bottom: 3px solid transparent;
+}
+
+.pestana[aria-selected="true"] {
+    border-bottom-color: #0b6e5c;
+    font-weight: bold;
+}
+
+.filtros {
+    margin: 1rem 0 .5rem;
+}
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+.tabla th,
+.tabla td {
+    text-align: left;
+    padding: .5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabla tr.urgente {
+    background: #fdecea;
+}
+
+.sr-only {
+    position: absolute;
+    left: -9999px;
+}
