@@ -75,7 +75,7 @@ require __DIR__ . '/../includes/cabecera.php';
                 ?>
                 <tr class="<?= e($clase) ?>">
                     <td><?= e(date('d/m/Y H:i', strtotime($inc['creada_en']))) ?></td>
-                    <td><?= e($inc['equipo']) ?></td>
+                    <td><a href="incidencia.php?id=<?= e($inc['id']) ?>"><?= e($inc['equipo']) ?></a></td>
                     <td><?= e(etiqueta($inc['categoria'])) ?></td>
                     <td><?= e(etiqueta($inc['prioridad'])) ?></td>
                     <td><?= e(etiqueta($inc['estado'])) ?></td>

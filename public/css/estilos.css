@@ -164,3 +164,28 @@ button,
     position: absolute;
     left: -9999px;
 }
+
+.detalle {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: .3rem 1rem;
+    background: #fff;
+    padding: 1rem;
+    border: 1px solid #ccd;
+}
+
+.detalle dt {
+    font-weight: bold;
+}
+
+.detalle dd {
+    margin: 0;
+}
+
+.historial li {
+    margin-bottom: .75rem;
+}
+
+.boton-peligro {
+    background: #b3261e;
+}
