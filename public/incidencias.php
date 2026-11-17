@@ -93,6 +93,6 @@ require __DIR__ . '/../includes/cabecera.php';
 <script id="datos-incidencias" type="application/json">
     <?= $json ?>
 </script>
-<!-- cuando haga el JavaScript, quito los comentarios de esta línea:
-<script type="module" src="js/main.js"></script> -->
+
+<script type="module" src="js/main.js"></script>
 <?php require __DIR__ . '/../includes/pie.php'; ?>

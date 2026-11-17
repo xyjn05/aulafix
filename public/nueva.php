@@ -146,7 +146,6 @@ require __DIR__ . '/../includes/cabecera.php';
 
     <button type="submit">Enviar incidencia</button>
 </form>
-<!-- este script (contador y borrador) lo haré en la parte de JavaScript,
-     de momento lo dejo comentado para que no dé error de archivo no encontrado:
-<script type="module" src="js/nueva.js"></script> -->
+
+<script type="module" src="js/nueva.js"></script>
 <?php require __DIR__ . '/../includes/pie.php'; ?>
